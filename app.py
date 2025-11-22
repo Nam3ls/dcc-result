@@ -48,6 +48,13 @@ HTML_FORM = """
             {{ result|safe }}
         </div>
     {% endif %}
+
+     <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Optional: Vercel Speed Insights -->
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
 </body>
 </html>
 """
