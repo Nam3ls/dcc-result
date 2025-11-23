@@ -104,6 +104,17 @@ HTML_FORM = """
             }
         }
     </style>
+
+    <link rel="manifest" href="/static/manifest.json">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Register service worker -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/static/service-worker.js");
+        }
+    </script>
+
 </head>
 <body>
     <div class="container">
